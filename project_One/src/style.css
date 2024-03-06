@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply m-auto justify-center h-screen justify-items-center 
+    content-center bg-indigo-100;
+}
+.container {
+    @apply flex-col justify-center content-center
+     w-9/12 h-60 justify-items-center
+    m-auto h-screen mt-44 border-blue-50 border-solid;
+}
+h1 {
+    @apply text-2xl font-normal text-center font-bold
+    text-purple-600;
+}
+.container div {
+    @apply flex justify-center items-center;
+}
+label {
+    @apply font-sans mt-5 mr-5;
+}
+input {
+    @apply border-solid border-black border-2 rounded
+    mt-5 p-1;
+}
+button {
+    @apply border-solid border-purple-600 border-2 rounded
+    bg-purple-600 text-white mt-7 w-48;
+}
+button:hover {
+    @apply text-purple-600 bg-white; 
+}
