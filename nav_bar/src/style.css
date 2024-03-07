@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav {
+    @apply w-full h-20 relative border-solid
+    border-b-2;
+}
+.nav label {
+    @apply text-red-950 font-bold absolute top-6 pl-2;
+}
+.nav .navbar {
+    @apply absolute right-0 flex flex-row min-w-max top-6;
+}
+.nav .navbar li {
+    @apply font-sans mr-2 relative;
+}
+.nav .navbar .navHidden {
+    @apply invisible bg-red-400 p-2 w-36 rounded absolute top-36;
+}
+.nav .navbar .noHidden {
+    @apply mr-6;
+}
+.nav .navbar li:hover {
+    @apply cursor-pointer;
+}
+.nav .navbar .noHidden:hover {
+    .navHidden {
+        @apply visible transition ease-in-out delay-75
+        -translate-y-28 duration-500;
+    }
+}
